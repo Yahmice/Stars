@@ -1,11 +1,11 @@
 import React from 'react';
-import Stars from './Stars/Stars.tsx';
+import { Stars } from './Stars/Stars.tsx';
 
-function App() {
+export default function App() {
   return (
-    <Stars count = {2}></Stars>
+    <Stars count = {4}></Stars>
   );
 }
 
-export default App
+
 

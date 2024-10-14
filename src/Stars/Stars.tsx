@@ -11,7 +11,7 @@ export const Stars = ({count = 0}: StarCount) => {
     if (Number.isNaN(count)) return null;
     if (count < 1 || count > 5) return null;
 
-    const starsListItem = [];
+    const starsListItem: React.JSX.Element[] = [];
     
     for(let i = 1; i <= count; i++ ) {
         starsListItem.push(<li key={nanoid()}><Star /></li>);
@@ -22,6 +22,6 @@ export const Stars = ({count = 0}: StarCount) => {
             {[starsListItem]}
         </ul>
     )
+
 }
 
-export default Stars;
